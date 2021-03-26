@@ -1,0 +1,8 @@
+<!--miniprogram/pages/managers/main.wxml-->
+<view class="uploader-text" >
+  <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button> -->
+  <button class="userinfo-nickname" data-usertype="user" bindtap="onUsers">注册用户</button>
+  <button class="userinfo-nickname" data-usertype="staff" bindtap="onStaffs">工作人员</button>
+  <button class="userinfo-nickname" bindtap="onStatics">订单信息</button>
+  <button class="userinfo-nickname" bindtap="onInv">回收物统计</button>
+</view>

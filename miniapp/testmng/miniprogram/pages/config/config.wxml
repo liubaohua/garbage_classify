@@ -1,0 +1,6 @@
+<view class="uploader-text">
+  
+  <button type="default"  class="userinfo-nickname" bindtap="onTimeSet">上下班打卡</button>
+  <button type="default"  class="userinfo-nickname" bindtap="onShowMap">服务小区</button>
+
+</view>

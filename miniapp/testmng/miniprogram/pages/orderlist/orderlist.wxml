@@ -1,0 +1,33 @@
+<!--miniprogram/pages/orderlist/orderlist.wxml-->
+<view>
+  <button type="default" bindtap="onQuery" >查询</button>
+  地址:<input type="text" value="{{address}}" bindinput="onInputAddress" >{{address}}</input>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      日期: {{date}}
+    </view>
+  </picker>
+
+ <text wx:if="{{!hasData}}" >无数据,请输入条件或直接查询</text>
+  
+  <view>
+    <!-- <image class='com-logo' mode="top" src='1.ico'></image> -->
+    <view class="work-item"  wx:for="{{orderlist}}" wx:for-item="orderlist" wx:key="{{orderlist._id}}" >
+
+      <view class="flex-wrp" style="flex-direction:row;">
+        <!-- <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.plandate}}</view>
+        <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.plandate}}</view> -->
+        <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.plandate}}</view>
+          <view class="flex-item demo-text-3" style="flex-direction:row;">{{orderlist.plantime}}</view>
+          <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.invcname}}</view>
+          <view class="flex-item demo-text-3" style="flex-direction:row;">{{orderlist.invname}}</view>
+        </view>
+
+  
+    </view>
+
+  </view>
+
+  <button type="default" bindtap="onBack" >返回</button>
+</view>
+

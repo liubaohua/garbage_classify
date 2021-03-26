@@ -1,0 +1,3 @@
+<view wx:for="{{dataset}}" wx:for-item="item">
+  {{item._id}}
+</view>

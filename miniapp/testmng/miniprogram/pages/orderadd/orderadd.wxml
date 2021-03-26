@@ -1,0 +1,7 @@
+<view>
+  <text>回收物分类</text><input bindinput="onInputInvcname" value="{{invcname}}"> {{invcname}} </input>
+  <text>回收物名称</text><input bindinput="onInputInvname" value="{{invname}}"> {{invname}} </input>  
+  上门日期<picker bindchange="onTapDate" mode="date">{{plandate}}</picker>
+  上门时间<picker bindchange="onTapTime" mode="time">{{plantime}}</picker>  
+  <button type="default" bindtap="onOrderAdd">提交</button>
+</view>

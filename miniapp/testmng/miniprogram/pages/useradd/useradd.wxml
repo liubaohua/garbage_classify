@@ -1,0 +1,11 @@
+<view>
+  <text>姓名</text>
+  <input bindinput="onInputUsername" value="{{username}}"> {{username}} </input>
+  <text>小区</text><input bindinput="onInputUserdistrict" value="{{userdistrict}}"> {{userdistrict}} </input>
+  <text>地址</text><input bindinput="onInputUseraddr" value="{{useraddr}}"> {{useraddr}} </input>  
+  <text>电话</text><input bindinput="onInputUserphone" value="{{userphone}}"> {{userphone}} </input>
+  <!-- <text>回收物分类</text><input bindinput="onInputInvcname" value="{{invcname}}"> {{invcname}} </input>
+  <text>回收物名称</text><input bindinput="onInputInvname" value="{{invname}}"> {{invname}} </input> -->
+  
+  <button type="default" bindtap="onAdd"> 提交</button>
+</view>

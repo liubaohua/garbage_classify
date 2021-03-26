@@ -1,0 +1,19 @@
+<!--miniprogram/pages/orderlist/orderlist.wxml-->
+<view>  
+  <view>
+    <!-- <image class='com-logo' mode="top" src='1.ico'></image> -->
+    <view class="work-item"  wx:for="{{userlist}}" wx:for-item="userlist" wx:key="{{userlist._id}}" >
+      <view class="flex-wrp" style="flex-direction:row;">
+        <!-- <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.plandate}}</view>
+        <view class="flex-item demo-text-2" style="flex-direction:row;">{{orderlist.plandate}}</view> -->
+        姓名<view class="flex-item demo-text-2" style="flex-direction:row;">{{userlist.username}}</view>
+        小区<view class="flex-item demo-text-3" style="flex-direction:row;">{{userlist.userdistrict}}</view>
+        电话<view class="flex-item demo-text-2" style="flex-direction:row;">{{userlist.userphone}}</view>
+        地址<view class="flex-item demo-text-3" style="flex-direction:row;">{{userlist.useraddress}}</view>
+        </view>
+    </view>
+  </view>
+
+  <button type="default" bindtap="onBack" >返回</button>
+</view>
+
