@@ -62,13 +62,13 @@
       <text>预约上门</text>
     </view>
     <view class="uploader-text" bindtap="onConfig">
-      <text>设置</text>
+      <text>系统设置</text>
     </view>
     <view class="uploader-text" bindtap="onManagers">
-      <text>管理员</text>
+      <text>管理人员</text>
     </view>
     <view class="uploader-text" bindtap="onExit">
-      <text>退出</text>
+      <text>退出登录</text>
     </view>
     <view class="comment-item" wx:for="{{globalData}}" wx:key="item" wx:for-item="Citem">
       <text class="comment-time">{{Citem._id}}-></text>
